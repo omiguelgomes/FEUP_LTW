@@ -1,0 +1,58 @@
+body {
+    width: 60em;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr auto auto auto;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+body>h1,
+body>h2 {
+    vertical-align: middle;
+}
+
+#signup {
+    float: right;
+    margin: 1em;
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-content: space-around;
+}
+
+nav>ul>li {
+    flex: 1;
+}
+
+aside {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.news {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
